@@ -1,0 +1,5 @@
+#容器化部署
+docker build -t  my-python-app:latest .
+docker run -it --name jenkins-jiankong
+#创建计划任务，每天7~12点执行一次
+#0 7-11 * * * docker restart jenkins_jiankong
